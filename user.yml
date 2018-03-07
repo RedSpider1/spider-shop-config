@@ -1,0 +1,16 @@
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/yasinshaw/spring_cloud_config.git
+          username: yasinshaw
+          password: xy24911525115
